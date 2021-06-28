@@ -15,4 +15,9 @@ export class ModalService {
   hide(){
     Swal.hideLoading();
   }
+  closeModal(){
+    if(!Swal.isLoading()){
+      Swal.close();
+    }
+  }
 }
