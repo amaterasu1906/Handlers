@@ -11,13 +11,13 @@ export class ViewUsersComponent implements OnInit {
   constructor(private clientes : UsersService) { }
 
   ngOnInit(): void {
-    this.clientes.getClients().subscribe( response =>{
-      console.log(response);
+    // this.clientes.getClients().subscribe( response =>{
+    //   console.log(response);
       
-    });
-    this.clientes.getClientById(1).subscribe(response =>{
-      console.log(response);
-    });
+    // });
+    // this.clientes.getClientById(1).subscribe(response =>{
+    //   console.log(response);
+    // });
   }
 
 }

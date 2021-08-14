@@ -14,7 +14,11 @@ export class UserComponent implements OnInit {
     this.viewUser(12);
   }
   viewUser(id: number){
-    this.clientes.getClientById(id).subscribe(response =>{
+    
+    // this.clientes.getClientById(id).subscribe(response =>{
+    //   console.log(response);
+    // });
+    this.clientes.getClients().subscribe(response =>{
       console.log(response);
     });
   }
